@@ -9,7 +9,7 @@ let bitSpeed = document.getElementById("bits"),
 let totalBitSpeed = 0;
 let totalKbSpeed = 0;
 let totalMbSpeed = 0;
-let numTests = 1;
+let numTests = 5;
 let testCompleted = 0;
 
 // Get random image from unsplash.com
@@ -29,7 +29,7 @@ image.onload = async function () {
 // Function to calculate speed
 function calculateSpeed() {
     // Time taken in seconds
-    let timeDuration = (endTime - startTime) / 1000;
+    let timeDuration = (endTime - startTime) / 3000;
     // Total bits
     let loadedBits = imageSize * 8;
     let speedInBts = loadedBits / timeDuration;
